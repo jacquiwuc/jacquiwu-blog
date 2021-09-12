@@ -2,7 +2,7 @@
 
 What is CloudFormation?
 
-![image](https://user-images.githubusercontent.com/44564577/132982347-3cd4b18c-c90c-4ee8-8a82-5a02e36bda7c.png)
+![image](https://user-images.githubusercontent.com/44564577/132982432-227d8261-0aca-4262-8192-eb245d1f7e24.png)
 
 
 CloudFormation is a tool which can spin up resources on AWS. If someone wants to be an AWS expert, CloudFormation is an essential service to master.
@@ -36,6 +36,7 @@ The answer is JSON /YAML
 
 Let’s take a look at a JSON template (a template respresents a stack, the components with the stack are known as resources):
 
+```
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Description":"Create a S3 bucket",
@@ -45,6 +46,7 @@ Let’s take a look at a JSON template (a template respresents a stack, the comp
              }
 }
 }
+```
 Inside Resources, uniquely named keys are mapped to specific AWS resources. In our example, this CloudFormation template is used to create a S3 bucket in AWS.
 
 Functions:
