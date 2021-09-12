@@ -8,7 +8,7 @@ Terraform allows you to do the same thing but in code, i.e., Infrastructure as C
 
 It will also make your infrastructure auditable. Just look at .tf files, we can see what the infrastructure is made of. And even better, we can keep changes in Version Control System, e.g., git.
 
-Download and Install
+**Download and Install**
 Terraform can be downloaded and installed in different operational systems, pls check it out on official website.
 
 After downloading and installing Terraform, lets verify it.
@@ -17,10 +17,10 @@ Use “terraform -v” in terminal, if the result shows the version, then it can
 
 The last step in setting is to use an IDE to manage, e.g., Visual Studio.
 
-What Language Terraform supports?
+**What Language Terraform supports?**
 Terraform language is called Hashicorp configuration language in a file that has a .tf extension, so all of our Terraform codes will be stored in a file with .tf extension.
 
-Let’s start!
+**Let’s start!**
 Now we can create a new project in our own IDE and name it. Then we create a file called main.tf.
 
 At this point, what providers Terraform can support can be checked out on their website.
@@ -47,9 +47,11 @@ resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
 }
 
-```We can copy and paste the part of “Configure the AWS Provider” codes in our main.tf file. And we can check what region we are in AWS and modify it.
+```
+We can copy and paste the part of “Configure the AWS Provider” codes in our main.tf file. And we can check what region we are in AWS and modify it.
 
 Now we get the provider set up and if we go back to Terraform tutorial, it continues to teach us how to set things up. And the next thing to set up the Authentication.
+![image](https://user-images.githubusercontent.com/44564577/132972140-81e444be-06d1-42c3-ab5e-5fad0ec8c3ff.png)
 
 
 We can take the hard-coding way to have a look: create static creditials. It is not recommended because if we publish the .tf file into Github or something else, the credentials will be stored there, which will cause a security vulnerability problem.
@@ -97,9 +99,12 @@ After we run it in terminal, we can see it is initializing the backend and initi
 
 After it is successful, the second Terraform command we need to know is “Terraform plan”. Even it is completely optional, but it is a quick sanity check to make sure we won’t break anything. If we have a look at what is happening, it will color code things depending on the action.
 
-“+” means creating a resource
-“-“means deleting a resource
-“~”means modifying an existing resource
+- “+” means creating a resource
+
+- “-“means deleting a resource
+
+- “~”means modifying an existing resource
+
 The final command is “Terraform apply” and it will ask you to hit “yes” then it will create our server. Then it will show “Apply complete! Resources 1 added, 0 changed, 0 destroyed”.
 
 Then we can verify it in our AWS console. At this point, we can see the first EC2 instance is deployed through Terraform.
