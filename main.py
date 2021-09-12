@@ -142,7 +142,7 @@ def add_md_label(repo, md, me):
                     continue
                 if isMe(issue, me):
                     if i == ANCHOR_NUMBER:
-                        md.write("<details><summary>显示更多</summary>\n")
+                        md.write("<details><summary>More</summary>\n")
                         md.write("\n")
                     add_issue_info(issue, md)
                     i += 1
