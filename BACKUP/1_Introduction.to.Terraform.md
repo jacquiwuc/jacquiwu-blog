@@ -1,6 +1,7 @@
 # [Introduction to Terraform](https://github.com/jacquiwuc/jacquiwu-blog/issues/1)
 
 Just imagine you are a customer of a cloud provider and you want to spin up some machines, you can go into some web console, fill in some forms, click some buttons and then launch an instance. But you can also use Terraform.
+![image](https://user-images.githubusercontent.com/44564577/132972088-8c57ee1e-0ffd-4a7b-ba9f-e5f02ed9ce14.png)
 
 
 Terraform allows you to do the same thing but in code, i.e., Infrastructure as Code. It is the automation of your infrastructure and keep your infrastructure in a certain state. For example, you want to spin up 5 small instances and whenever you run Terraform, it will ensure that those run on a cloud platform. When we change something manually, Terraform will try to match the code with the actual infrastructure.
