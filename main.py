@@ -105,22 +105,6 @@ def add_md_top(repo, md, me):
                 add_issue_info(issue, md)
 
 
-def add_md_firends(repo, md, me):
-    s = FRIENDS_TABLE_HEAD
-    friends_issues = list(repo.get_issues(labels=FRIENDS_LABELS))
-    for issue in friends_issues:
-        for comment in issue.get_comments():
-            if is_hearted_by_me(comment, me):
-                try:
-                    s += _make_friend_table_string(comment.body)
-                except Exception as e:
-                    print(str(e))
-                    pass
-    with open(md, "a+", encoding="utf-8") as md:
-        md.write("## Friend Links\n")
-        md.write(s)
-
-
 def add_md_recent(repo, md, me):
     new_five_issues = repo.get_issues()[:5]
     with open(md, "a+", encoding="utf-8") as md:
