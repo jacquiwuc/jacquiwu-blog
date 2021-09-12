@@ -127,7 +127,7 @@ def add_md_top(repo, md, me):
     if not TOP_ISSUES_LABELS or not top_issues:
         return
     with open(md, "a+", encoding="utf-8") as md:
-        md.write("## 置顶文章\n")
+        md.write("## Top Articles\n")
         for issue in top_issues:
             if isMe(issue, me):
                 add_issue_info(issue, md)
@@ -145,7 +145,7 @@ def add_md_firends(repo, md, me):
                     print(str(e))
                     pass
     with open(md, "a+", encoding="utf-8") as md:
-        md.write("## 友情链接\n")
+        md.write("## Friend Links\n")
         md.write(s)
 
 
@@ -154,7 +154,7 @@ def add_md_recent(repo, md, me):
     with open(md, "a+", encoding="utf-8") as md:
         # one the issue that only one issue and delete (pyGitHub raise an exception)
         try:
-            md.write("## 最近更新\n")
+            md.write("## Recently Update\n")
             for issue in new_five_issues:
                 if isMe(issue, me):
                     add_issue_info(issue, md)
