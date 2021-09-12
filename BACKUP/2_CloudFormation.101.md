@@ -2,6 +2,9 @@
 
 What is CloudFormation?
 
+![image](https://user-images.githubusercontent.com/44564577/132982347-3cd4b18c-c90c-4ee8-8a82-5a02e36bda7c.png)
+
+
 CloudFormation is a tool which can spin up resources on AWS. If someone wants to be an AWS expert, CloudFormation is an essential service to master.
 
 Before we jump into writing a CloudFormation template, let’s have a brief history about how to manage AWS infrastructure before CloudFormation.
@@ -23,10 +26,11 @@ Templates are written using a DSL that describes resources and relationships, e.
 
 Their pros:
 
-Consistency
-Auditing
-Complicance
-Rollbacks
+* Consistency
+* Auditing
+* Complicance
+* Rollbacks
+
 What languages CloudFormation supports?
 The answer is JSON /YAML
 
