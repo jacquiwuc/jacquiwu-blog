@@ -13,3 +13,12 @@ Once we have our `test.sh` file created and we can open the file again and add t
 ` echo "hello world" `
 
 Save the file and exit.
+
+
+---
+
+> hey @jacquiwuc Do you need any help in bash scripting? actually, I didn't get this issue?
+
+Hi, @yamikarajput546 thanks for offering help. This repository is my personal blog using issues and GitHub Actions, pls check the pipeline out: https://github.com/jacquiwuc/jacquiwu-blog/blob/main/.github/workflows/generate_readme.yml
+
+So actually after i open an issue, the readme.md will get updated
